@@ -9,7 +9,9 @@ export default function Hamburger() {
   return (
     <button
       onClick={handleClick}
-      className="h-8 flex flex-col justify-center items-center md:hidden"
+      className={`h-8 flex flex-col justify-center items-center transition-all duration-300 md:hidden ${
+        isOpen ? 'rotate-90' : ''
+      }`}
     >
       <span
         className={`bg-black block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
