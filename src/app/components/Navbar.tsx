@@ -1,12 +1,12 @@
-import Link from "next/link";
+'use client';
+import Link from 'next/link';
+import Hamburger from './Hamburger';
 
 export default function Navbar() {
   return (
     <nav className="bg-teal-700 mx-auto p-4 flex justify-between items-center">
       <div className="flex items-center gap-4">
-        <button className="text-3xl md:hidden focus:outline-none">
-          &#9776;
-        </button>
+        <Hamburger />
         <div className="bg-gray-300 w-4 h-4">{/* Montreal icon */}</div>
       </div>
       <div className="hidden md:flex justify-between md:w-2/3 lg:w-1/2">
