@@ -11,7 +11,7 @@ export default function Navigation() {
 
   return (
     <>
-      <MobileNav isOpen={isOpen} />
+      <MobileNav isOpen={isOpen} handleClick={toggleOpen} />
       <Navbar isOpen={isOpen} toggleOpen={toggleOpen} />
     </>
   );
