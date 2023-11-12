@@ -16,30 +16,24 @@ export default function MobileNav({
       onClick={handleClick}
     >
       <nav
-        className="flex min-h-screen flex-col items-center py-8"
+        className="flex min-h-screen flex-col items-center py-8 gap-20 text-white"
         aria-label="mobile"
       >
-        <Link
-          href="/"
-          className="w-full py-6 text-center hover:opacity-90 text-white"
-        >
+        <Link href="/" className="w-full text-center pt-32 hover:opacity-90">
           HOME
         </Link>
-        <Link
-          href="/events"
-          className="w-full py-6 text-center hover:opacity-90"
-        >
+        <Link href="/events" className="w-full text-center hover:opacity-90">
           ALL EVENTS
         </Link>
         <Link
           href="/contribute"
-          className="w-full py-6 text-center hover:opacity-90"
+          className="w-full text-center hover:opacity-90"
         >
           HOW TO CONTRIBUTE
         </Link>
         <Link
           href="/large-events"
-          className="w-full py-6 text-center hover:opacity-90"
+          className="w-full text-center hover:opacity-90"
         >
           LARGE EVENTS
         </Link>
