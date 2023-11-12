@@ -1,11 +1,10 @@
-import { useState } from 'react';
-
-export default function Hamburger() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const handleClick = () => {
-    setIsOpen(!isOpen);
-  };
+export default function Hamburger({
+  isOpen,
+  handleClick,
+}: {
+  isOpen: boolean;
+  handleClick: () => void;
+}) {
   return (
     <button
       onClick={handleClick}

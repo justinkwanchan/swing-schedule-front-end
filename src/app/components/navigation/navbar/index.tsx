@@ -1,14 +1,21 @@
-'use client';
 import Link from 'next/link';
 import Hamburger from './Hamburger';
 
-export default function Navbar() {
+export default function Navbar({
+  isOpen,
+  toggleOpen,
+}: {
+  isOpen: boolean;
+  toggleOpen: () => void;
+}) {
   return (
     <nav className="bg-teal-700 mx-auto p-4 flex justify-between items-center">
       <div className="flex items-center gap-4">
-        <Hamburger />
+        {/* Mobile Menu */}
+        <Hamburger isOpen={isOpen} handleClick={toggleOpen} />
         <div className="bg-gray-300 w-4 h-4">{/* Montreal icon */}</div>
       </div>
+      {/* Desktop Menu */}
       <div className="hidden md:flex justify-between md:w-2/3 lg:w-1/2">
         <Link href="/">HOME</Link>
         <Link href="/events">ALL EVENTS</Link>
