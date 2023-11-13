@@ -3,7 +3,7 @@ import splotch from 'public/splotch.svg';
 
 export default function Hero() {
   return (
-    <section className="flex flex-col md:flex-row h-[calc(100vh-62px)] w-full">
+    <section className="flex flex-col md:flex-row h-[calc(100svh-62px)] w-full">
       <div className="relative w-2/5">
         <Image
           src={splotch}
