@@ -4,7 +4,7 @@ import splotch from 'public/splotch.svg';
 export default function Hero() {
   return (
     <section className="flex flex-col md:flex-row h-[calc(100svh-62px)] w-full">
-      <div className="relative w-2/5">
+      <div className="bg-[#eff1f3] relative w-2/5">
         <Image
           src={splotch}
           alt={'Splotchy Frame'}
@@ -16,7 +16,7 @@ export default function Hero() {
           all levels of experience in Montreal.
         </p>
       </div>
-      <div className="bg-black opacity-70 md:w-3/5"></div>
+      <div className="bg-black/70 md:w-3/5"></div>
     </section>
   );
 }

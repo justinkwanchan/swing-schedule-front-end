@@ -12,7 +12,7 @@ export default function Navbar({
   toggleOpen: () => void;
 }) {
   return (
-    <nav className="bg-teal-700 mx-auto p-4 flex justify-between items-center sticky top-0 z-20">
+    <nav className="mx-auto p-4 flex justify-between items-center sticky top-0 z-20">
       {/* Left Side */}
       <div className="flex items-center gap-4">
         {/* Mobile Menu */}
