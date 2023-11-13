@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Hamburger from './Hamburger';
 import montrealIcon from 'public/montreal-icon.svg';
+import instagramIcon from 'public/instagram-icon.svg';
 
 export default function Navbar({
   isOpen,
@@ -29,9 +30,11 @@ export default function Navbar({
 
       {/* Right Side */}
       <div className="flex items-center gap-4">
-        <div className="bg-gray-300 hidden md:block w-4 h-4">
-          {/* Instagram icon */}
-        </div>
+        <Image
+          src={instagramIcon}
+          alt={'Instagram Icon'}
+          className="hidden md:block"
+        />
         <Link href="/login">LOGIN</Link>
         <div className="bg-gray-300 w-4 h-4">{/* En/Fr switch */}</div>
       </div>
