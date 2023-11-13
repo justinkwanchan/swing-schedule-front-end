@@ -36,7 +36,6 @@ export default function Navbar({
           className="hidden md:block"
         />
         <Link href="/login">LOGIN</Link>
-        <div className="bg-gray-300 w-4 h-4">{/* En/Fr switch */}</div>
       </div>
     </nav>
   );
