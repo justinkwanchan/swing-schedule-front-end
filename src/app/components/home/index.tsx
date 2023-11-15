@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import splotch from 'public/splotch.svg';
 
-export default function Hero() {
+export default function Home() {
   return (
     <section className="flex flex-col md:flex-row h-[calc(100svh-62px)] w-full">
       <div className="bg-light-grey relative h-[70vw] md:h-auto md:w-2/5 2xl:w-1/3">
