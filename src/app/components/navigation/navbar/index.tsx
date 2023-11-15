@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import Hamburger from './Hamburger';
-import montrealIcon from 'public/montreal-icon.svg';
 import instagramIcon from 'public/instagram-icon.svg';
+import MontrealIcon from '../../svg/MontrealIcon';
 
 export default function Navbar({
   isOpen,
@@ -17,7 +17,7 @@ export default function Navbar({
       <div className="flex items-center gap-4">
         {/* Mobile Menu */}
         <Hamburger isOpen={isOpen} handleClick={toggleOpen} />
-        <Image src={montrealIcon} alt={'Montreal Icon'} />
+        <MontrealIcon />
       </div>
 
       {/* Middle - Desktop Menu */}
