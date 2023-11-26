@@ -5,7 +5,7 @@ import PreviewSection from './preview-section';
 export default function Home() {
   return (
     <>
-      <section className="flex flex-col md:flex-row h-[calc(100svh-62px)] w-full">
+      <section className="flex flex-col md:flex-row h-[calc(100svh-62px)] w-full mb-12">
         <div className="bg-light-grey relative h-[70vw] md:h-auto md:w-2/5 2xl:w-1/3">
           <Image
             src={splotch}
@@ -21,7 +21,9 @@ export default function Home() {
         <div className="bg-dark-grey h-[calc(60svh-64px)] md:h-auto grow"></div>
       </section>
 
-      <PreviewSection title={'Upcoming Social Dances'} />
+      <div className="flex flex-col w-4/5 mb-12">
+        <PreviewSection title={'Upcoming Social Dances'} />
+      </div>
     </>
   );
 }
