@@ -12,7 +12,7 @@ type Props = {
 };
 
 export default function PreviewSection({ title }: Props) {
-  const [emblaRef, emblaApi] = useEmblaCarousel();
+  const [emblaRef, emblaApi] = useEmblaCarousel({ align: 'start' });
   const [scrollProgress, setScrollProgress] = useState(0);
   const [prevBtnDisabled, setPrevBtnDisabled] = useState(true);
   const [nextBtnDisabled, setNextBtnDisabled] = useState(true);
