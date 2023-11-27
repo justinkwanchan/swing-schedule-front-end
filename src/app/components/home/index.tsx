@@ -21,8 +21,10 @@ export default function Home() {
         <div className="bg-dark-grey h-[calc(60svh-64px)] md:h-auto grow"></div>
       </section>
 
-      <div className="flex flex-col w-4/5 mb-12">
+      <div className="flex flex-col w-4/5 mb-12 gap-12">
         <PreviewSection title={'Upcoming Social Dances'} />
+        <PreviewSection title={'Newly-Listed Events'} />
+        <PreviewSection title={'Beginner Classes'} />
       </div>
     </>
   );
