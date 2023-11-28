@@ -14,6 +14,17 @@ export default function Home() {
             alt={'Splotchy Frame'}
             className="absolute top-16 left-4 md:top-8 md:left-8 z-10 w-[75%] md:w-[100%]"
           />
+          <div className="flex flex-col absolute top-[53%] left-[17%] md:top-[16vw] md:left-[30%] lg:top-[15vw] lg:left-[28%] xl:left-[26%] 2xl:top-[13vw] z-20 w-[55%] md:w-[70%] leading-tight">
+            <h1 className="text-[11vw] md:text-[6vw] 2xl:text-[5vw] font-bold">
+              This
+            </h1>
+            <h1 className="self-end text-[11vw] md:text-[6vw] 2xl:text-[5vw] font-bold">
+              Week
+            </h1>
+            <h1 className="mt-4 ml-6 text-[3vw] md:text-[2vw] 2xl:text-[1vw]">
+              in Montreal
+            </h1>
+          </div>
           <div className="md:h-[50vw] lg:h-[45vw] 2xl:h-[35vw]"></div>
           <p className="pl-[40%] pt-4 pr-4 sm:pt-8 sm:pr-8 md:px-12">
             Find dance classes, social events, dance studios, and performances
