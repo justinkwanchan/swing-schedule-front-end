@@ -6,7 +6,10 @@ export default function PreviousFlyersSection() {
     <div className="flex flex-col">
       <div className="flex mb-4">
         <h1 className="font-bold text-xl mr-4">Previous Flyers</h1>
-        <Link href={''} className="underline text-cyan-400 text-sm self-center">
+        <Link
+          href="/previous-flyers"
+          className="underline text-cyan-400 text-sm self-center"
+        >
           View all
         </Link>
       </div>
