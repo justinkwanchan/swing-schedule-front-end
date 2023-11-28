@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import splotch from 'public/splotch.svg';
 import PreviewSection from './preview-section';
+import DanceSchoolSection from './dance-school-section';
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         <PreviewSection title={'Upcoming Social Dances'} />
         <PreviewSection title={'Newly-Listed Events'} />
         <PreviewSection title={'Beginner Classes'} />
+        <DanceSchoolSection />
       </div>
     </>
   );
